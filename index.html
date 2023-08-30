@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="modal">
+            <h1>"Угадай Число"</h1>
+            <div id="start_game">
+                <p id="text"></p>
+                <button id="start">Начать</button>
+            </div>
+
+            <div id="set_digit">
+                <p id="rangeT"></p>
+
+                <div class="numbers">
+                    <label>
+                        <p>От:</p>
+                        <input type="number" name="" placeholder="0" id="from">
+                    </label>
+                      
+                    <label>
+                        <p>До:</p>
+                        <input type="number" name="" id="to" placeholder="100">
+                    </label>
+
+                </div>
+                <button id="setDigit">Готово</button>
+            </div>
+
+            <div id="guessing">
+                <p id="guiessT"></p>
+
+                <div id="guessDigit">
+                    <input type="number" name="" id="gDigit" placeholder="Угадай :)">
+                    <button id="guiessBtn"></button>
+                </div>
+                <div id="resetGame">
+                    <button onclick="resetGame()">Начать заново</button>
+                </div>
+
+            </div>
+
+            <div id="exitGame" onclick="resetGame()">
+                <div id="exitBtn"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
