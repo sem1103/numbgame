@@ -60,7 +60,7 @@ checkNumbs.onclick = () => {
     else if(inpFrom.value == '' || inpTo.value == ''){
         stopAndWrite('Заполните поля!',rangeP);
     }
-    else if(inpFrom.value > inpTo.value){
+    else if(+inpFrom.value > +inpTo.value){
         stopAndWrite('Первое значение не может быть больше второго!',rangeP)
     }
     else {
