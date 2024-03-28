@@ -1,7 +1,7 @@
 let p = document.getElementById('text');
 let rangeP = document.getElementById('rangeT');
 let guiessT = document.getElementById('guiessT');
-
+alert('sad')
 let startBtn = document.getElementById('start');
 let checkNumbs = document.getElementById('setDigit');
 let exitBtn = document.getElementById('exit');
